@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.xyz/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/task.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>job List</title>
+    <style>
+      
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg  bg-dark " data-bs-theme="dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">EMS2.0</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/Employees.html">Employees</a>
+            </li>
+           
+            <li class="nav-item">
+              <a class="nav-link" aria-disabled="true">Jobs</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+
+            <div class="input-group mb-3">
+             <input class="form-control  bg-white" type="search" placeholder="Search" > 
+             <span class="input-group-text bg-success me-2" id="basic-addon1"><i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i><span>
+             
+            </div>
+            <div class="h-25" style="border-left: #616161 2px solid;">
+              <a class="text-decoration-none" href="/index.html"><span class="input-group-text bg-warning p-2 ms-3" id="basic-addon1"><i class="fa-solid fa-power-off" style="color: #000000;"></i></span></a>
+              
+
+            </div>
+          </form>
+          
+        </div>
+      </div>
+    </nav>
+    <div class="container-fluid mt-5">
+      <div class="row justify-content-center">
+        <div class="col-md-2">
+          <ul class="list-group mb-4 shadow">
+            <li class="list-group-item active">Job Data</li>
+            <a
+              class="list-group-item list-group-item-action"
+              href=""
+              data-bs-toggle="modal"
+              data-bs-target="#modal-add"
+            >
+              Add job
+            </a>
+          </ul>
+          <ul class="list-group mb-3 shadow">
+            <li class="list-group-item active">Related Links</li>
+            <a
+              href="employeeslist.html"
+              class="list-group-item list-group-item-action"
+              >Employees List</a
+            >
+          </ul>
+        </div>
+        <div class="col-md-8">
+          <table class="table table-bordered caption-top">
+            <caption class="bg-dark text-center text-light rounded-top">
+              Job Lists
+            </caption>
+            <thead class="table-secondary">
+              <tr>
+                <th scope="col">ID</th>
+
+                <th scope="col">Name</th>
+
+                <th scope="col">Details</th>
+                <th scope="col">Edit</th>
+                <th scope="col">Delete</th>
+              </tr>
+            </thead>
+            <tbody class="align-middle">
+              <tr>
+                <th scope="row">1</th>
+                <td>Graphic Design</td>
+                <td>
+                  <a
+                    href="#"
+                    class="btn border-0 btn-primary d-block"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modal-details"
+                  >
+                    Details
+                  </a>
+                </td>
+                <td>
+                  <a
+                    href=""
+                    class="btn border-0 btn-warning d-block"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modal-edit"
+                  >
+                    Edit
+                  </a>
+                </td>
+                <td>
+                  <a
+                    href=""
+                    class="btn border-0 btn-danger d-block"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modal-delete"
+                  >
+                    Delete
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Web Design</td>
+                <td>
+                  <a
+                    href=""
+                    class="btn border-0 btn-primary d-block"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modal-details"
+                  >
+                    Details
+                  </a>
+                </td>
+                <td>
+                  <a
+                    href=""
+                    class="btn border-0 btn-warning d-block"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modal-edit"
+                  >
+                    Edit
+                  </a>
+                </td>
+                <td>
+                  <a
+                    href=""
+                    class="btn border-0 btn-danger d-block"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modal-delete"
+                  >
+                    Delete
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Flutter</td>
+                <td>
+                  <a
+                    class="btn border-0 btn-primary d-block"
+                    href=""
+                    data-bs-toggle="modal"
+                    data-bs-target="#modal-details"
+                  >
+                    Details
+                  </a>
+                </td>
+                <td>
+                  <a
+                    href=""
+                    class="btn border-0 btn-warning d-block"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modal-edit"
+                  >
+                    Edit
+                  </a>
+                </td>
+                <td>
+                  <a
+                    href=""
+                    class="btn border-0 btn-danger d-block"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modal-delete"
+                  >
+                    Delete
+                  </a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- modal job -->
+    <div
+      class="modal fade"
+      id="modal-add"
+      style="backdrop-filter: blur(5px)"
+      data-bs-backdrop="static"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header text-bg-dark">
+            <h5 class="modal-title">Add Job Details</h5>
+            <button
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form action="" class="">
+              <input type="date" class="form-control" />
+              <input
+                type="text"
+                class="form-control mt-4"
+                placeholder="Job Name"
+              />
+              <div class="d-flex justify-content-between"></div>
+              <button class="btn btn-success mt-4 w-75">Add Job</button>
+              <button
+                class="btn btn-warning mt-4 ms-1"
+                data-bs-dismiss="modal"
+                style="width: 23%"
+              >
+                Close
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="modal-details"
+      style="backdrop-filter: blur(5px)"
+      data-bs-backdrop="static"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header text-bg-dark">
+            <h5 class="modal-title">Job Details</h5>
+            <button
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body p-0 m-0">
+            <table class="table table-bordered mb-0">
+              <tr>
+                <th class="w-50">ID</th>
+                <td>1</td>
+              </tr>
+              <tr>
+                <th>Job Name</th>
+                <td>Flutter</td>
+              </tr>
+            </table>
+          </div>
+          <div class="modal-footer">
+            <div class="d-flex justify-content-end">
+              <button
+                class="btn btn-warning"
+                data-bs-target="#modal-edit"
+                data-bs-toggle="modal"
+              >
+                Edit Details
+              </button>
+              <button class="btn btn-primary ms-2" data-bs-dismiss="modal">
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="modal-edit"
+      style="backdrop-filter: blur(5px)"
+      data-bs-backdrop="static"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header text-bg-dark">
+            <h5 class="modal-title">Job Details</h5>
+            <button
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form action="" class="">
+              <input type="date" class="form-control" value="2023-12-09" />
+              <input
+                type="text"
+                class="form-control mt-4"
+                placeholder="Job Name"
+                value="Flutter"
+              />
+              <div class="d-flex mt-4">
+                <button class="btn btn-success me-3 w-100">Update Job</button>
+                <button class="btn btn-warning" data-bs-dismiss="modal">
+                  Close
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="modal-delete"
+      style="backdrop-filter: blur(5px)"
+      data-bs-backdrop="static"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <label class="modal-title fs-5"
+              >Do you want to delete the job<strong>"Flutter"</strong> ?</label
+            >
+            <button class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <div class="text-center">
+              <button class="btn btn-danger btn-sm">Yes!</button>
+              <button class="btn btn-warning btn-sm" data-bs-dismiss="modal">
+                Nope, Go back
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/New folder/js/bootstrap.bundle.js"></script>
+  </body>
+</html>

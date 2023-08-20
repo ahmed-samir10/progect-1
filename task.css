@@ -1,0 +1,11 @@
+.modal{
+    backdrop-filter: blur(5px);
+}
+.navbar-brand{
+    background: #0066FF;
+background: linear-gradient(to right, #0066FF 0%, #00CF15 100%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+
+}
